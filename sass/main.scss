@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.mai_nheader{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #10ac84;
+    
+
+    // ============= oprators in scss =============
+
+    /*
+    In the scss you can use any math opeator like
+
+    +
+    -
+    *
+    /
+    %
+
+    */
+    h1{
+        color: red; 
+        font-size: 5rem;
+     }
+}
+
+// ============  variables ============
+// syntax  $bg-clolor red
+
+//  declearing varible
+
+$bg-clolor:#10ac84;
+$font-color:#fff;
+$border:2px solid red;
+
+.footer{
+    background-color: $bg-clolor;
+    // color: $font-color;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    border: $border;
+    
+    p{
+        color: $font-color;
+        font-style: italic;
+        font-size: 10rem - 8rem;
+    }
+}
+
+// ============   nesting   ==============
+
+$backgroun:rgb(121, 192, 192);
+$text:red;
+
+.main{
+display: flex;
+width: 100vw;
+height: 100vh;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: $backgroun;
+p{
+    color: $text;
+    font-size: 2rem;
+    font-style: italic;
+}
+span{
+    color: $text;
+    font-size: 3rem;
+    font-style: $border;
+}
+pre{
+    color: $text;
+    font-size: 4rem;
+    font-style: bold;
+}
+}
+  
